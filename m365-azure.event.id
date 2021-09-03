@@ -1,0 +1,11 @@
+if (doc.containsKey('o365.audit.InterSystemsId') && doc['o365.audit.InterSystemsId'].size()!=0 ) {
+  emit(doc['o365.audit.InterSystemsId'].value);
+  return;
+}
+
+else if (doc.containsKey('azure.correlation_id') && doc['azure.correlation_id'].size()!=0 ) {
+  emit(doc['azure.correlation_id'].value);
+  return;
+}
+
+return;
