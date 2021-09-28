@@ -7,6 +7,8 @@ A collection of custom dashboards to give you a holistc view of your Microsoft 3
 * Which users receive the most suspicious mail?  Where is this mail coming from?
 * What users does Azure AD consider to be risky and why?
 
+Check out our blog for an [in-depth walkthrough](https://ironvine.com/securing-microsoft-365-with-elastic/) of these dashboards.  Enjoy!
+
 ## Requirements
 
 [Elastic Stack](https://www.elastic.co/) v7.14 or higher
