@@ -46,6 +46,6 @@ Next, we'll add a custom [runtime field](https://www.elastic.co/guide/en/elastic
 * Enable and configure [Elastic Agent - O365 integration](https://docs.elastic.co/en/integrations/o365).
 * Enable and configure [Elastic Agent - Azure integration](https://docs.elastic.co/en/integrations/azure).
 
-If you are collecting logs via Filebeat, you will need to edit each of the panels in the dashboard and replace the "logs-*" index pattern with "filebeat-*".  
+If you are collecting logs via Filebeat, you will need to edit each of the panels in the dashboard and replace the `logs-*` index pattern with `filebeat-*`.  
 * Enable and configure [Filebeat - O365 module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-o365.html).
 * Enable and configure [Filebeat - Azure module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-azure.html).
