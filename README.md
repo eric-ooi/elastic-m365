@@ -11,7 +11,8 @@ Check out our blog for an [in-depth walkthrough](https://ironvine.com/securing-m
 
 ## Requirements
 
-[Elastic Stack](https://www.elastic.co/) v7.14 or higher
+* [Elastic Stack](https://www.elastic.co/) v7.14 or higher
+* [Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation-configuration.html)
 
 ## Installation
 
@@ -41,6 +42,10 @@ Next, we'll add a custom [runtime field](https://www.elastic.co/guide/en/elastic
 9. Open the Kibana navigation menu again and click on **Dashboard**.
 10. **Search for *M365*** and click on one of the three newly imported Microsoft 365 dashboards to start using them.
 
-**Note**: This guide assumes you're already capturing Microsoft 365 and Azure logs into Elasticsearch via Filebeat.  If not, refer to Elastic's documentation:
-* Enable and configure [Filebeat O365 module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-o365.html).
-* Enable and configure [Filebeat Azure module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-azure.html).
+**Note**: This guide assumes you're already capturing Microsoft 365 and Azure logs into Elasticsearch via [Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation-configuration.html).
+* Enable and configure [Elastic Agent - O365 integration](https://docs.elastic.co/en/integrations/o365).
+* Enable and configure [Elastic Agent - Azure integration](https://docs.elastic.co/en/integrations/azure).
+
+If you are collecting logs via Filebeat, you will need to edit each of the panels in the dashboard and replace the "logs-*" index pattern with "filebeat-*".  
+* Enable and configure [Filebeat - O365 module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-o365.html).
+* Enable and configure [Filebeat - Azure module](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-azure.html).
