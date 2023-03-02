@@ -35,7 +35,7 @@ Next, we'll add a custom [runtime field](https://www.elastic.co/guide/en/elastic
 8. In the window that opens, set the following:
    * Name: **m365-azure.event.id**
    * Type: **Keyword**
-   * Enable **Set value** and copy and paste the [m365-azure.event.id source code](https://github.com/ironvine/elastic-m365/blob/main/m365-azure.event.id) into the **Define script** field.
+   * Enable **Set value** and copy and paste the [m365-azure.event.id source code](https://github.com/eric-ooi/elastic-m365/blob/main/m365-azure.event.id) into the **Define script** field.
    * Click **Save** when done.
 
 ### View Dashboards
