@@ -29,7 +29,7 @@ First, we'll import the .ndjson file into Kibana.
 
 Next, we'll add a custom [runtime field](https://www.elastic.co/guide/en/elasticsearch/reference/current/runtime.html) called **m365-azure.event.id** that enables us to correlate Microsoft 365 and Azure logs relating to the same activity.
 
-5. Still in the **Stack Management** window, click on **Index Patterns** in the left menu.
+5. Still in the **Stack Management** window, click on **Data Views** in the left menu.
 6. Click on **logs-***.
 7. In the top right, click on **Add field**.
 8. In the window that opens, set the following:
